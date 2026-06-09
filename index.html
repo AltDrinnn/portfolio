@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mark Aldrin Ventura | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
+
+<header class="hero">
+    <nav class="navbar">
+        <div class="logo">MAV</div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <a class="btn" href="#contact">Hire Me</a>
+    </nav>
+
+    <div class="hero-content">
+        <div class="hero-text">
             <h1>Mark Aldrin Ventura</h1>
-            <p>Aspiring Developer | Designer</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <p>Web Developer • UI Designer • Flutter Developer</p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
         </div>
-    </header>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm a passionate learner interested in web and mobile development,
-            and technology.
-            I enjoy building projects and learning new skills.
-        </p>
-    </section>
+        <div class="hero-image">
+            <div class="profile-placeholder">
+                <span>Profile Photo</span>
+            </div>
+        </div>
+    </div>
+</header>
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
+<section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+        I'm a passionate developer focused on building modern web and mobile applications.
+        I enjoy creating clean, user-centered interfaces and learning new technologies.
+        My goal is to build meaningful digital experiences.
+    </p>
+</section>
+
+<section id="skills" class="section dark reveal">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">WordPress</div>
+        <div class="skill">Flutter</div>
+        <div class="skill">Firebase</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+    </div>
+</section>
+
+<section id="projects" class="section reveal">
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
 
         <div class="project-card">
-            <img src="assets/DepEdpang2.png">
-            <h3>DepEd SDO II Pangasinan </h3>
-            <p>
-                Developed and customized the official website for the Schools Division Office II
-                of Pangasinan using WordPress and Elementor. The project focused on creating
-                a responsive, user-friendly, and accessible platform for publishing announcements,
-                division memoranda, news updates, and educational resources. Implemented modern
-                layouts, content management solutions, and optimized the website for improved
-                usability across desktop and mobile devices.
-            </p>
-            <a href="#">View Project</a>
+            <img src="assets/DepEdpang2.png" alt="DepEd Project">
+            <div class="project-content">
+                <h3>DepEd SDO II Pangasinan</h3>
+                <p>
+                    Developed and customized the official website using WordPress and Elementor.
+                    Focused on responsiveness, accessibility, and modern UI design.
+                </p>
+                <a href="#" class="project-btn">View Project</a>
+            </div>
         </div>
 
         <div class="project-card">
-            <img src="assets/Ethica-Home-Screen.png">
-            <h3>Ethica: A Gamified Approach to Teaching Values Education</h3>
-            <p> 
-                A capstone mobile application developed with Flutter that applies gamification
-                principles to promote active learning in Values Education. Features include
-                interactive learning modules, quizzes, rewards, and progress monitoring to
-                encourage student participation while making the learning experience more
-                engaging and meaningful.
-            </p>
-            <a href="#">View Project</a>
+            <img src="assets/Ethica-Home-Screen.png" alt="Ethica App">
+            <div class="project-content">
+                <h3>Ethica: Gamified Values Education App</h3>
+                <p>
+                    A Flutter-based mobile app that promotes Values Education using gamification,
+                    quizzes, and interactive learning modules.
+                </p>
+                <a href="#" class="project-btn">View Project</a>
+            </div>
         </div>
 
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: drenventura15@gmail.com</p>
-        <p>
-            GitHub:
-            <a href="https://github.com/altdrinnn" target="_blank">
-                github.com/altdrinnn
-            </a>
-        </p>
+<section id="contact" class="section dark reveal">
+    <h2>Contact</h2>
 
-        <p>
-            LinkedIn:
-            <a href="https://linkedin.com/in/aldrin-ventura-6b407b408" target="_blank">
-                linkedin.com/in/aldrin-ventura-6b407b408
-            </a>
-        </p>
-    </section>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p>drenventura15@gmail.com</p>
+        </div>
 
-    <footer>
-        <p>© 2026 Mark Aldrin Ventura</p>
-    </footer>
+        <div class="contact-card">
+            <h3>GitHub</h3>
+            <p>github.com/altdrinnn</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/aldrin-ventura-6b407b408</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mark Aldrin Ventura. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
